@@ -83,7 +83,22 @@ limit 1;
 ```
 <img width="276" alt="image" src="https://github.com/user-attachments/assets/20713a37-64c4-47df-91a0-9aaee0c8bc57" />
 
-# 9.
+# 9.Get the highest-rated cinema hall in each city.
+```
+select name, location, rating Max_rating
+from cleaned_file
+where rating = (select max(rating) from cleaned_file);
+```
+<img width="493" alt="image" src="https://github.com/user-attachments/assets/7980081f-a746-47aa-93b4-d1fa1465651a" />
+
+# 10. Find the cinema with the most reviews ( Replaceing 000 to K )
+```
+select name, review_count 
+from cleaned_file 
+where name is not null
+order by cast(replace(review_count, 'K', '000') as unsigned) desc;
+```
+<img width="265" alt="image" src="https://github.com/user-attachments/assets/ffd1fb21-d499-46bd-bc64-8347ffc88399" />
 
 # Create a Function that returns Dammam's Data when selecting
 - Function Code
