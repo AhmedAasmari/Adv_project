@@ -13,14 +13,16 @@ set
 set SQL_SAFE_UPDATES = 1;
 ```
 
-# 1.Get the top 3 highest-rated Cinema.
+# 1.Get the top 5 highest-rated Cinema.
 ```
 select name, rating
 from cleaned_file
+where name is not null
 order by rating desc
-limit 3;
+limit 5;
 ```
-<img width="206" alt="image" src="https://github.com/user-attachments/assets/b67dbb81-e95d-4485-97c2-77f70a4321d6" />
+<img width="240" alt="image" src="https://github.com/user-attachments/assets/1d00110a-f49a-493b-b97f-0c31eaaed001" />
+
 
 # 2.Count the number of Cinema by genre.
 ```
