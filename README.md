@@ -85,7 +85,7 @@ limit 1;
 ```
 <img width="276" alt="image" src="https://github.com/user-attachments/assets/20713a37-64c4-47df-91a0-9aaee0c8bc57" />
 
-# 9.Get the highest-rated cinema hall in each city.
+# 9.Get the highest-rated Cinema in each city.
 ```
 select name, location, rating Max_rating
 from cleaned_file
@@ -93,7 +93,7 @@ where rating = (select max(rating) from cleaned_file);
 ```
 <img width="493" alt="image" src="https://github.com/user-attachments/assets/7980081f-a746-47aa-93b4-d1fa1465651a" />
 
-# 10. Find the cinema with the most reviews ( Replaceing 000 to K )
+# 10. Find the Cinema with the most reviews ( Replaceing 000 to K )
 ```
 select name, review_count 
 from cleaned_file 
