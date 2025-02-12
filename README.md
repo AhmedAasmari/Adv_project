@@ -119,4 +119,5 @@ select name, rating, review_count, genre, get_location() location , best_comment
 from cleaned_file
 where best_comment is not null;
 ```
-<img width="755" alt="image" src="https://github.com/user-attachments/assets/03575938-d2fc-4a7a-b425-80618c401981" />
+![Uploading image.png…]()
+
